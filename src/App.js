@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="header">
       </header>
-      <ExpenseItem price={100} expense="Phone Bill" date={today.getDate()} />
+      <ExpenseItem price={100} expense="Phone Bill" date={today} />
     </div>
   );
 }

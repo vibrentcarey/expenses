@@ -1,9 +1,10 @@
+import ExpenseDate from "./ExpenseDate"
 import "./ExpenseItem.css"
 
 const ExpenseItem = ({ date, expense, price }) => {
   return (
     <section className="expense-item">
-      <h3 className="expense-item__date">{date}</h3>
+      <ExpenseDate date={date} />
       <h2 className="expense-item__title">{expense}</h2>
       <article className="expense-item__price">
         <p className="expense-item__price--text">${price}</p>

@@ -1,5 +1,6 @@
 .expense-item {
   background-color: #bdd2b6;
+  border: 2px solid #798777;
   border-radius: 10px;
   display: flex;
   align-items: center;
