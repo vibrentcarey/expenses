@@ -1,3 +1,4 @@
+import Card from "../wrapper-components/Card";
 import ExpenseItem from "./ExpenseItem"
 import "./Expenses.css"
 
@@ -7,9 +8,9 @@ const Expenses = ({ expenses }) => {
   });
 
   return (
-    <article className="expenses">
+    <Card className="expenses">
       {expenseItems}
-    </article>
+    </Card>
   )
 }
 
