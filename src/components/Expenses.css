@@ -1,0 +1,12 @@
+.expenses {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  height: 50%;
+  width: 60%;
+  margin: 0;
+  background-color: #798777;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
