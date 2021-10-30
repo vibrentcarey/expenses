@@ -8,3 +8,15 @@
   align-items: center;
   justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .expenses {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .expenses {
+    width: 95%;
+  }
+}

@@ -13,3 +13,9 @@
 .expense-date > * {
   margin: 0.1rem;
 }
+
+@media only screen and (max-width: 400px) {
+  .expense-date {
+    width: 20%;
+  }
+}

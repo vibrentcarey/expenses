@@ -10,13 +10,19 @@
   width: 90%;
 }
 
+@media only screen and (max-width: 400px) {
+  .expense-item {
+    width: 95%;
+  }
+}
+
 .expense-item__price {
   background-color: #798777;
   border: 2px solid #f8ede3;
   border-radius: 10px;
   text-align: center;
   width: 25%;
-}
+}  
 
 .expense-item__price--text {
   color: #f8ede3;
