@@ -24,6 +24,7 @@ const Expenses = ({ expenses }) => {
   return (
     <Card className="expenses">
       <ExpenseFilter setSelectedMonth={monthSelectHandler} />
+      FIXME: Expenses Do Not Show Automatically After Being Added
       <h1 className="expenses__title">{month} Expenses</h1>
       <hr className="expenses__line" />
       {expenseItems.length === 0 ?  

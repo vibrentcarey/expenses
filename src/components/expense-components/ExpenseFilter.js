@@ -41,6 +41,7 @@ const ExpenseFilter = ({ filterExpenses, setSelectedMonth }) => {
 
   useEffect(() => {
     setSelectedMonth(convertMonthToInt(), month)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [month, filterExpenses])
 
   return (
