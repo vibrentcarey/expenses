@@ -26,7 +26,10 @@ const Expenses = ({ expenses }) => {
       <ExpenseFilter setSelectedMonth={monthSelectHandler} />
       <h1 className="expenses__title">{month} Expenses</h1>
       <hr className="expenses__line" />
-      {expenseItems}
+      {expenseItems.length === 0 ?  
+      <section className="expenses__no-expenses">
+      <h1 className="expenses__no-expenses--text">No Expenses Yet - <br/> <a className="expenses__link" href="#title">Add An Expense</a></h1>
+      </section> : expenseItems}
       <section className="expenses__footer">
         TODO: Calculate Total Expenses
         <p className="expenses__total">Total Money Spent This Month: <span class="big-bold">$</span></p>

@@ -24,7 +24,7 @@
 }
 
 .expenses__header > * {
-  margin: 0 .4rem;
+  margin: 0 0.4rem;
 }
 
 .expenses__title {
@@ -36,4 +36,23 @@
 .expenses__line {
   width: 80%;
   border-top: 1px solid #ffe6e6;
+}
+
+.expenses__no-expenses {
+  background-color: #da9ff8;
+  width: 80%;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem;
+  padding: 1.25rem;
+}
+
+.expenses__no-expenses--text {
+  margin: 0.1rem;
+  font-size: 2rem;
+}
+
+.expenses__link {
+  color: #B188F9;
 }

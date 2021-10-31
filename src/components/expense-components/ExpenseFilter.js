@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./ExpenseFilter.css"
 
 const ExpenseFilter = ({ filterExpenses, setSelectedMonth }) => {
-  const [month, setMonth] = useState("january")
+  const [month, setMonth] = useState("January")
 
   const selectMonth = (e) => {
     setMonth(e.target.value)
