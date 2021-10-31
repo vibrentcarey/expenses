@@ -2,35 +2,41 @@ import { useState } from "react"
 import Card from "../wrapper-components/Card"
 import "./NewExpenseForm.css"
 
-const NewExpenseForm = () => {
+const NewExpenseForm = ({ onFormSubmit }) => {
   const [expenseData, setExpenseData] = useState({
     title: '',
     amount: '',
     date: ''
   })
-
+  // Set The Values From The Form Into State
   const setUserData = (e) => {
     setExpenseData(prevExpenseData => {
+      // Using A Computed Property To Dynamically Set Relevant State
       return { ...prevExpenseData, [e.target.id]: e.target.value }
     })
   }
 
   const submitForm = (e) => {
     e.preventDefault()
-
+    // Reformat The Date Into Individual Parts
+    const dayOfExpense = expenseData.date.slice(-2)
+    const monthOfExpense = expenseData.date.slice(5, 7)
+    const yearOfExpense = expenseData.date.slice(0, 4)
+    // Add An ID Key To The Data
     const userExpenseData = {
+      id: Math.random().toString(),
       title: expenseData.title,
       amount: expenseData.amount,
-      date: expenseData.date
+      date: new Date(yearOfExpense, parseInt(monthOfExpense) -1, dayOfExpense)
     }
 
-    console.log(userExpenseData)
+    onFormSubmit(userExpenseData)
   }
 
   return (
     <Card className="new-expense">
       <form onSubmit={submitForm}>
-        <h1>Please Enter An Expense Below</h1>
+        <h1>Please Enter An Expense</h1>
         <hr className="expenses__line" />
         <section className="new-expense__inputs">
           {/* Expense Title */}
@@ -49,6 +55,7 @@ const NewExpenseForm = () => {
             <input onChange={setUserData} className="new-expense__input--input" id="date" placeholder=" dd.mm.yyyy" type='date' min="2021-10-01" max="2022-12-31" />
           </article>
         </section>
+        :TODO: Extract data from Form into parent
         <section className="new-expense__actions">
           <button className="new-expense__actions--button">Add Expense</button>
         </section>

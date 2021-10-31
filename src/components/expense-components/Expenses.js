@@ -3,8 +3,8 @@ import ExpenseItem from "./ExpenseItem"
 import "./Expenses.css"
 
 const Expenses = ({ expenses }) => {
-  const expenseItems = expenses.map(({ id, expense, date, price }) => {
-    return <ExpenseItem key={id} price={price} expense={expense} date={date} />
+  const expenseItems = expenses.map(({ id, title, date, amount }) => {
+    return <ExpenseItem key={id} price={amount} expense={title} date={date} />
   });
 
   return (
