@@ -1,6 +1,6 @@
 .expense-date {
-  background-color: #B088F9;
-  border: 1px solid #FFE6E6;
+  background-color: #b088f9;
+  border: 1px solid #ffe6e6;
   border-radius: 10px;
   height: 90%;
   display: flex;
@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem;
-  color: #FFE6E6;
+  color: #ffe6e6;
 }
 
 .expense-date > * {
@@ -18,5 +18,6 @@
 @media only screen and (max-width: 400px) {
   .expense-date {
     width: 20%;
+    height: 120%;
   }
 }

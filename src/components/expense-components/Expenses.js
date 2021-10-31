@@ -10,7 +10,7 @@ const Expenses = ({ expenses }) => {
   return (
     <Card className="expenses">
       TODO: Make This Month Live Update ***
-      <h1 className="expenses__title">Your Expenses For October</h1>
+      <h1 className="expenses__title">October Expenses</h1>
       <hr className="expenses__line" />
       {expenseItems}
       <section className="expenses__footer">

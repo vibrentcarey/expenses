@@ -9,11 +9,16 @@
   margin: 0.5rem 1.25rem;
   width: 95%;
   color: #f8ede3;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 400px) {
   .expense-item {
     width: 95%;
+    height: 80px;
+  }
+  .expense-item__price{
+    width: 30%;
   }
 }
 
