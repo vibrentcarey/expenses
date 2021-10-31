@@ -48,6 +48,12 @@
   padding: 1.25rem;
 }
 
+@media only screen and (max-width: 550px) {
+  .expenses__no-expenses {
+    height: 10rem;
+  }
+}
+
 .expenses__no-expenses--text {
   margin: 0.1rem;
   font-size: 2rem;

@@ -29,7 +29,7 @@ const Expenses = ({ expenses }) => {
       <hr className="expenses__line" />
       {expenseItems.length === 0 ?  
       <section className="expenses__no-expenses">
-      <h1 className="expenses__no-expenses--text">No Expenses Yet - <br/> <a className="expenses__link" href="#title">Add An Expense</a></h1>
+      <h1 className="expenses__no-expenses--text">No Expenses<br/> <a className="expenses__link" href="#title">Add Expense</a></h1>
       </section> : expenseItems}
       <section className="expenses__footer">
         TODO: Calculate Total Expenses

@@ -12,9 +12,8 @@
   overflow: hidden;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .expense-item {
-    width: 95%;
     height: 80px;
   }
   .expense-item__price{
@@ -39,6 +38,7 @@
 
 .expense-item__title {
   width: 50%;
+  margin: 0 1rem;
 }
 
 .expense-item__title--text {
