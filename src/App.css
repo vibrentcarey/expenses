@@ -1,23 +1,52 @@
 * {
   box-sizing: border-box;
 }
+html,
+body,
+#App,
+#App > div {
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+}
 
 html {
   margin: 0;
   padding: 0;
 }
 
+body {
+  height: 100%;
+  background-color: #bedcfa;
+}
+
 .App {
-  background-color: #f8ede3;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  font-family: "Sora", sans-serif;
+  color: #ffe6e6;
 }
 
 .main {
   width: 100%;
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.app__header {
+  height: 80px;
+  background-color: #b088f9;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.big-bold {
+  font-size: xx-large;
+  font-weight: bold;
 }

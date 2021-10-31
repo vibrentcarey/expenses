@@ -9,7 +9,14 @@ const Expenses = ({ expenses }) => {
 
   return (
     <Card className="expenses">
+      TODO: Make This Month Live Update ***
+      <h1 className="expenses__title">Your Expenses For October</h1>
+      <hr className="expenses__line" />
       {expenseItems}
+      <section className="expenses__footer">
+      TODO: Calculate Total Expenses
+        <p className="expenses__total">Total Money Spent This Month: <span class="big-bold">$</span></p>
+      </section>
     </Card>
   )
 }

@@ -11,7 +11,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="header">
+      <header className="app__header">
+      <h1>Hiyō</h1>
       </header>
       <main className="main">
         <NewExpenseForm />

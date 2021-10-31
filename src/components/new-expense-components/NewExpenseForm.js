@@ -5,6 +5,8 @@ const NewExpenseForm = () => {
   return (
     <Card className="new-expense">
       <form>
+      <h1>Please Enter An Expense Below</h1>
+      <hr className="expenses__line"/>
         <section className="new-expense__inputs">
           {/* Expense Title */}
           <article className="new-expense__input">
