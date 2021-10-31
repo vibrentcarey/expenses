@@ -72,3 +72,9 @@
     width: 90%;
   }
 }
+
+.new-expense__error {
+  color: #b088f9;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
