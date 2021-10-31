@@ -1,0 +1,6 @@
+.expense-filter {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1.25rem;
+}

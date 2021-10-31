@@ -23,10 +23,14 @@
   }
 }
 
+.expenses__header > * {
+  margin: 0 .4rem;
+}
+
 .expenses__title {
   font-size: 2rem;
   font-weight: bold;
-  margin:0 0 .2rem 0;
+  margin: 0 0 0.2rem 0;
 }
 
 .expenses__line {
