@@ -24,6 +24,7 @@ const Chart = ({ expenses }) => {
   return (
     <Card className="chart">
       <h1>Expenses Chart</h1>
+      <hr className="expenses__line" />
       <main className="chart__main">
         {chartBars}
       </main>
