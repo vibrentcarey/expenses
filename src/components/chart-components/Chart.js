@@ -26,19 +26,18 @@ const Chart = ({ expenses }) => {
   }
 
   // Convert Expense Objects To Number Values
-  const expenseValues = expenses.map(expense => parseInt(expense.amount))
-  const maxHeight = Math.max(...expenseValues)
+  // const expenseValues = expenses.map(expense => parseInt(expense.amount))
 
-  console.log(` max ${maxHeight}`)
-
+  const maxBudget = 1000;
   const chartBars = chartInfo.map(monthlyData => {
-    return <ChartBar key={monthlyData.label} label={monthlyData.label} height={monthlyData.value} maxHeight={maxHeight} />
+    return <ChartBar key={monthlyData.label} label={monthlyData.label} height={monthlyData.value} maxHeight={maxBudget} />
   })
 
   return (
     <Card className="chart">
       <h1>Expenses Chart</h1>
       <hr className="expenses__line" />
+      TODO: MOVE THIS INTO BUDGET SECTION AND CALCULATE MONTHLY TOTALS COMPARED TO BUDGET
       <main className="chart__main">
         {chartBars}
       </main>
