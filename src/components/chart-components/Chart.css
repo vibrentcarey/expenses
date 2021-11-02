@@ -1,0 +1,14 @@
+.chart {
+  width: 75%;
+  height: 300px;
+  background-color: #b088f9;
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.chart__main {
+  display: flex;
+  width: 100%;
+  height: 90%;
+}
