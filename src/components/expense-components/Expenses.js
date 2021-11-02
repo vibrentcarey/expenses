@@ -38,7 +38,6 @@ const Expenses = ({ expenses }) => {
           <h1 className="expenses__no-expenses--text">No Expenses<br /> <a className="expenses__link" href="#title">Add Expense</a></h1>
         </section> : expenseItems}
       <section className="expenses__footer">
-        TODO: Calculate Total Expenses
         <p className="expenses__total">Total Money Spent in {month}: <span class="big-bold">${totalAmount}</span></p>
       </section>
     </Card>

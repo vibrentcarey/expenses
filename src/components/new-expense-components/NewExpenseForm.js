@@ -58,7 +58,7 @@ const NewExpenseForm = ({ onFormSubmit }) => {
           {/* Expense Amount */}
           <article className="new-expense__input">
             <label className="new-expense__input--type" for="amount">Amount</label>
-            <input onChange={setUserData} className="new-expense__input--input" id="amount" placeholder=" 100" type='number' min='0'/>
+            <input onChange={setUserData} className="new-expense__input--input" id="amount" placeholder=" 100" type='number' min='0' max='10000'/>
           </article>
           {/* Expense Date */}
           <article className="new-expense__input">
