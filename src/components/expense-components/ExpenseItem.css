@@ -1,4 +1,14 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .expense-item {
+  animation: fade-in 2s;
   background-color: #da9ff9;
   border: 1px solid #f8ede3;
   border-radius: 10px;
