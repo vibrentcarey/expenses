@@ -37,7 +37,7 @@ const Chart = ({ expenses }) => {
     <Card className="chart">
       <h1>Expenses Chart</h1>
       <hr className="expenses__line" />
-      TODO: MOVE THIS INTO BUDGET SECTION AND CALCULATE MONTHLY TOTALS COMPARED TO BUDGET
+      //TODO: MOVE THIS INTO BUDGET SECTION AND CALCULATE MONTHLY TOTALS COMPARED TO BUDGET
       <main className="chart__main">
         {chartBars}
       </main>

@@ -40,7 +40,11 @@ const NewExpenseForm = ({ onFormSubmit }) => {
       amount: expenseData.amount,
       date: new Date(yearOfExpense, parseInt(monthOfExpense) - 1, dayOfExpense)
     }
-
+    setExpenseData({
+      title: '',
+      amount: '',
+      date: ''
+    })
     onFormSubmit(userExpenseData)
   }
 
@@ -53,17 +57,17 @@ const NewExpenseForm = ({ onFormSubmit }) => {
           {/* Expense Title */}
           <article className="new-expense__input">
             <label className="new-expense__input--type" for="title">Title</label>
-            <input onChange={setUserData} className="new-expense__input--input" id="title" placeholder=" Gym Membership" />
+            <input onChange={setUserData} className="new-expense__input--input" id="title" placeholder=" Gym Membership" value={expenseData.title} />
           </article>
           {/* Expense Amount */}
           <article className="new-expense__input">
             <label className="new-expense__input--type" for="amount">Amount</label>
-            <input onChange={setUserData} className="new-expense__input--input" id="amount" placeholder=" 100" type='number' pattern="\d*" min='0' max='10000'/>
+            <input onChange={setUserData} className="new-expense__input--input" id="amount" placeholder=" 100" type='number' pattern="\d*" min='0' max='10000' value={expenseData.amount} />
           </article>
           {/* Expense Date */}
           <article className="new-expense__input">
             <label className="new-expense__input--type" for="date">Date</label>
-            <input onChange={setUserData} className="new-expense__input--input" id="date" placeholder=" dd.mm.yyyy" type='date' min="2021-10-01" max="2022-12-31" />
+            <input onChange={setUserData} className="new-expense__input--input" id="date" placeholder=" dd.mm.yyyy" type='date' min="2021-10-01" max="2022-12-31" value={expenseData.date} />
           </article>
         </section>
         {!formIsValid && <p className="new-expense__error">Please Fill Out All Form Fields</p>}
